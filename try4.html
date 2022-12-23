@@ -4,10 +4,11 @@
 <head>
     <style>
         .card {
-            box-shadow: 4px 2px 4px 2px lightgray;
+            box-shadow: 4px 2px 4px 2px rgb(202, 200, 200);
             padding: 55px;
-            margin: 10px;
-            width: 400px
+            margin: 40px;
+            width: 400px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -19,22 +20,15 @@
     <div id="demo"></div>
 
     <script>
-        let file = "https://jsonplaceholder.typicode.com/posts"
 
-        fetch(file)
+        fetch("https://jsonplaceholder.typicode.com/posts?userId=1")
             .then(x => x.json())
             .then(y => {
                 y.forEach(obj => {
                     document.querySelector('#demo').insertAdjacentHTML("beforeend", `<div class='card'><p>Id : ${obj.userId}</p><p>Title : ${obj.title}</p><p>Body : ${obj.body}</p>`)
 
-                    
                 })
             });
-
-
-
-
-
     </script>
 
 </body>
