@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Fetch API</h1>
+    <h2>The fetch() Method</h2>
+    <div id="demo"></div>
+
+    <script>
+        let file = "https://jsonplaceholder.typicode.com/todos"
+
+        fetch(file)
+            .then(x => x.json())
+            .then(y => {
+                y.forEach(obj => {
+                    document.querySelector('#demo').insertAdjacentHTML("beforeend", `<input type='checkbox' ${obj.completed ? 'checked' : ''}/>${obj.title}<br>`)
+                })
+            });
+
+    </script>
+
+</body>
+
+</html>
