@@ -6,6 +6,7 @@
     <h1>JavaScript Fetch API</h1>
     <h2>The fetch() Method</h2>
     <div id="demo"></div>
+    <div id="body"></div>
 
     <script>
         let file = "https://jsonplaceholder.typicode.com/posts"
@@ -19,12 +20,12 @@
             });
 
 
-        let file2 = `https://jsonplaceholder.typicode.com/comments?postId=${obj.userId}`
+        let file2 = `https://jsonplaceholder.typicode.com/comments?postId=${userId}`
         fetch(file2)
             .then(x => x.json())
             .then(y => {
                 y.forEach(obj => {
-                    document.querySelector('#demo').insertAdjacentHTML("afterend", `${obj.body}`)
+                    document.querySelector('#demo').appendChild(`${obj.body}`)
                 })
             });
 
