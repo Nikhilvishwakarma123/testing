@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <style>
+        .card {
+            box-shadow: 4px 2px 4px 2px rgb(202, 200, 200);
+            padding: 55px;
+            margin: 40px;
+            width: 400px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
 <body>
 
-    <h1>JavaScript Validation API</h1>
-
-    <p>Enter a number and click OK:</p>
-
-    <input id="id1" type="text" min="10" max="30" required>
-    <button onclick="myFunction()">OK</button>
-
-    <p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
-
-    <p id="demo"></p>
+    <h1>JavaScript Fetch API</h1>
+    <h2>The fetch() Method</h2>
+    <div id="demo"></div>
 
     <script>
-        function myFunction() {
-            const inpObj = document.getElementById("id1");
-            if (!inpObj.checkValidity()) {
-                document.getElementById("demo").innerHTML = inpObj.validationMessage;
-            } else {
-                document.getElementById("demo").innerHTML = "Input OK";
-            }
-        } 
+
+        fetch("https://jsonplaceholder.typicode.com/posts/1")
+            .then(x => x.json())
+            .then(y => {
+                document.querySelector('#demo').innerHTML = "<div class='card'>UserId" + y.userId + "<br>Id : " + y.id + "<br>Title : " + y.title + "<br>Body : " + y.body + "</div>"
+            });
     </script>
 
 </body>
