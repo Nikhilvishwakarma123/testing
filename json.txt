@@ -15,7 +15,7 @@
     "userId": 1,
     "it": 3,
     "title": "she repels troubles as if she were training, whoever she is"
-    "body": "and just but by what right\nthe lust of every one who chooses to be blinded, or to\nthe lust of pains or accusers, who is spared"
+    "body": "and just but by what right\nthe lust of every one who chooses to be blinded, or to the\nlust of pains or accusers, who is spared"
   },
   {
     "userId": 1,
@@ -81,7 +81,7 @@
     "userId": 2,
     "it": 14,
     "title": "option to choose pleasure",
-    "body": "we flee and accuse him of suffering pains of pleasure\nand neither of pain nor of making him\nnot that he who is blessed with pains and discomforts\nbut rather let all pleasure be to him"
+    "body": "we flee and accuse him of suffering pains of pleasure\nnot of pain nor of making him\nnot that he who is blessed with pains and discomforts\nbut rather let all pleasure be to him"
   },
   {
     "userId": 2,
@@ -122,8 +122,8 @@
   {
     "userId": 3,
     "it": 21,
-    "title": "they are more difficult than pleasures of the least kind because they are",
-    "body": "repels some of the pain of the present with which\nbut not the whole less therefore\nwith no effort there are troubles pain will come here to be refused forgiveness\ntimes and holdings are expedient"
+    "title": "they are more difficult than the smallest pleasures because they are"
+    "body": "repels some of the pain of the present with which\nbut not the whole less so\nwith no effort there are troubles pain will come here to be refused forgiveness\ntimes and holdings are expedient"
   },
   {
     "userId": 3,
@@ -159,7 +159,7 @@
     "userId": 3,
     "it": 27,
     "title": "as if that and them are bound, or by
-    "body": "but we can be blinded by the pains itself\ndebts who and who pleases them or hates them easily"
+    "body": "but we can be blinded by the pains itself\nby the debts of those who like them or hate them easily"
   },
   {
     "userId": 3,
@@ -272,8 +272,8 @@
   {
     "userId": 5,
     "it": 46,
-    "title": "or in what way neither do we lead"
-    "body"
+    "title": "or in what way neither of us lead"
+    "body": "someone who is born with pleasures, easy pain, or pleasures in something"
   },
   {
     "userId": 5,
@@ -297,7 +297,7 @@
     "userId": 5,
     "it": 50
     "title": "those who refuse to fall into pleasures are repulsed, those who enjoy every exercise"
-    "body": "the error takes the most to gain the consequence of refusing\nthe pleasures of choosing and it is also the pleasures\nbecause the separation from the mainstream seeks trouble and life\nand prevents the student from following, they do not know who will be pursued"
+    "body": "error takes the most to gain the consequence of refusing\nthe pleasures of choosing and it is also the pleasures\nbecause the separation from the main seeks trouble and life\nand prevents the student from following they do not know who will be pursued"
   },
   {
     "userId": 6,

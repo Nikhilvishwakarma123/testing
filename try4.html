@@ -25,13 +25,12 @@
             .then(x => x.json())
             .then(y => {
                 y.forEach(obj => {
-                    let html = `<div>`
+                    document.querySelector('#demo').insertAdjacentHTML("beforeend", `<div class='card'><p>Id : ${obj.userId}</p><p>Title : ${obj.title}</p><p>Body : ${obj.body}</p>`)
 
-                    html += `<div>`
-
-
+                    
                 })
             });
+
 
 
 
