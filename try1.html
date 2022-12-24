@@ -24,7 +24,7 @@
         fetch("https://jsonplaceholder.typicode.com/posts/1")
             .then(x => x.json())
             .then(y => {
-                document.querySelector('#demo').innerHTML = "<div class='card'>UserId" + y.userId + "<br>Id : " + y.id + "<br>Title : " + y.title + "<br>Body : " + y.body + "</div>"
+                document.querySelector('#demo').innerHTML = "<div class='card'>UserId" + y.userId + "<br>Id : " + y.id + "<br>Title : " + y.title + "<br>Body : " + y.body + "</div>";
             });
     </script>
 
