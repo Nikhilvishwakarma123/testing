@@ -7,7 +7,7 @@
             box-shadow: 2px 2px 2px 2px lightgray;
             width: 400px;
             padding: 20px;
-            margin: 55px;
+            margin-top: 55px;
         }
     </style>
 </head>
@@ -19,13 +19,16 @@
             .then(x => x.json())
             .then(y => {
                 y.forEach(element => {
-                    document.querySelector("#demo").insertAdjacentHTML("beforeend", `<div class='card'>userId : ${element.userId}<br> Id : ${element.id}<br> Title : ${element.title}<br> Body : ${element.body}</div>`)
-
-                    fetch(`https://jsonplaceholder.typicode.com/comments?postId=${element.userId}`)
-                    .then(x => x.json())
-                    .then(y =>{
-                        
-                    })
+                    document.querySelector("#demo").insertAdjacentHTML("beforeend", `<div class='card'>
+                        userId : ${element.userId}<br> Id : ${element.id}<br> Title : ${element.title}<br> Body : ${element.body}</div>`)
+                    let userId = element.userId
+                    fetch(`https://jsonplaceholder.typicode.com/comments?postId=${userId}`)
+                        .then(x => x.json())
+                        .then(y => {
+                            y.forEach(element => {
+                                document.querySelector('.card').insertAdjacentHTML("beforeend", `Email : ${element.email}<br>`)
+                            });
+                        })
                 });
             })
     </script>
